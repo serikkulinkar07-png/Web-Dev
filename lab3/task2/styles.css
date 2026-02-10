@@ -1,0 +1,27 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#222}
+.topbar{background:#222}
+.topbar__inner{max-width:980px;margin:0 auto;padding:16px 24px;color:#aeb6bf;font-size:18px}
+.page{max-width:980px;margin:48px auto;padding:0 24px}
+.title{text-align:center;margin:0 0 28px;font-weight:500;font-size:40px;color:#3a3a3a}
+
+.controls{display:flex;justify-content:center;gap:16px;align-items:center;margin:0 0 26px}
+.input{width:min(640px,100%);height:42px;border:1px solid #d9d9d9;border-radius:4px;padding:0 14px;font-size:15px;outline:none}
+.input:focus{border-color:#7aa7ff;box-shadow:0 0 0 3px rgba(122,167,255,.22)}
+.btn{height:42px;padding:0 18px;border:0;border-radius:4px;background:#2f77c9;color:#fff;font-weight:600;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+
+.card{width:min(820px,100%);margin:0 auto;border:1px solid #e3e3e3;border-radius:6px;overflow:hidden;background:#fff}
+.list{list-style:none;margin:0;padding:0}
+
+.item{display:flex;align-items:center;gap:14px;padding:18px 18px;border-top:1px solid #ececec}
+.item:first-child{border-top:0}
+.item__check{width:18px;height:18px;cursor:pointer}
+.item__text{flex:1;font-size:16px;color:#444}
+.item.done .item__text{text-decoration:line-through;color:#888}
+
+.item__del{border:0;background:transparent;cursor:pointer;padding:8px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center}
+.item__del:hover{background:rgba(229,57,53,.08)}
+.item__del svg{width:18px;height:18px;fill:#e53935}
+
+.sr-only{position:absolute;left:-9999px}
