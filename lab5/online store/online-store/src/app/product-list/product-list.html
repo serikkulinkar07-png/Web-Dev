@@ -1,0 +1,7 @@
+<div class="list">
+  <app-product-card
+    *ngFor="let p of products"
+    [product]="p"
+    (remove)="onRemove($event)">
+  </app-product-card>
+</div>
