@@ -1,0 +1,8 @@
+a,
+a:visited {
+  color: #5b2aa5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

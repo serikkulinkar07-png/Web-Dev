@@ -1,0 +1,23 @@
+<div class="btn-row">
+  <button class="btn" (click)="goBack()">← Back to List</button>
+</div>
+
+<div *ngIf="loading" class="muted">Loading...</div>
+<div *ngIf="!loading && error" class="card">{{ error }}</div>
+
+<div *ngIf="!loading && album" class="card">
+  <h2>Edit Album #{{ album.id }}</h2>
+
+  <p><b>User ID:</b> {{ album.userId }}</p>
+
+  <label><b>Album Title:</b></label>
+  <input
+    style="width: 100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #ddd;"
+    [(ngModel)]="album.title"
+  />
+
+  <div class="btn-row">
+    <button class="btn" (click)="save()">Save Changes</button>
+    <button class="btn" (click)="viewPhotos()">View Photos</button>
+  </div>
+</div>

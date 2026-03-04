@@ -1,0 +1,112 @@
+
+:host {
+  display: block;
+  font-family: "Georgia", serif;
+  color: #111;
+}
+
+
+.topbar {
+  background: #1f3b4f;
+  padding: 12px 18px;
+}
+
+
+.nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.nav a.active {
+  background: #2f76a8;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.container {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 0 16px;
+}
+
+
+h1, h2 {
+  margin: 18px 0 12px;
+}
+
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #f7f7f7;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: #2f76a8;
+  color: #fff;
+  border-color: #2f76a8;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+.list a, .list .clickable {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #fff;
+  text-decoration: none;
+  color: #111;
+}
+
+.list a:hover, .list .clickable:hover {
+  border-color: #c9c9c9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.muted {
+  color: #666;
+}

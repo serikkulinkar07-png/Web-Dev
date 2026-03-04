@@ -1,0 +1,14 @@
+.item {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.title:hover {
+  color: purple;
+}

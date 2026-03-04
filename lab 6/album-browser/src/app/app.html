@@ -1,0 +1,11 @@
+<div class="topbar">
+  <div class="nav">
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/albums" routerLinkActive="active">Albums</a>
+  </div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

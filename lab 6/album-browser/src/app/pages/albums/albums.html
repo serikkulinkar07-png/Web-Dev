@@ -1,0 +1,13 @@
+<h2>Albums</h2>
+
+<div *ngIf="loading" class="muted">Loading...</div>
+<div *ngIf="!loading && error" class="card">{{ error }}</div>
+
+<ul class="list" *ngIf="!loading && !error">
+  <li *ngFor="let a of albums">
+
+    <a [routerLink]="['/albums', a.id]">
+      <b>#{{ a.id }}</b> — {{ a.title }}
+    </a>
+  </li>
+</ul>
